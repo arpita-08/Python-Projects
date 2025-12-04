@@ -3,7 +3,8 @@ This project is a terminal-based maze solver built using Python, BFS (Breadth-Fi
 and the curses library. The program visually animates the BFS algorithm as it searches for
 the shortest path from the Start (O) to the Goal (X) inside the maze.
 
-Preview: [img1.png] 
+Preview:
+https://github.com/arpita-08/Python-Projects/blob/main/path-finder/img1.png?raw=true
 
 Maze Layout:
 The maze is represented as a 2D list:
