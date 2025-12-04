@@ -1,0 +1,41 @@
+Maze Path Finder (BFS + Curses Animation)
+This project is a terminal-based maze solver built using Python, BFS (Breadth-First Search),
+and the curses library. The program visually animates the BFS algorithm as it searches for
+the shortest path from the Start (O) to the Goal (X) inside the maze.
+
+Preview: [img1.png] 
+
+Maze Layout:
+The maze is represented as a 2D list:
+# → Walls
+O → Start
+X → Goal
+' ' → Open paths
+Yellow X’s → BFS path being explored
+How It Works
+1. Drawing the Maze (print_maze):
+- Uses curses color pairs.
+- White for walls/open paths, yellow for explored BFS path.
+- j*2 spacing for readability.
+2. Finding the Start (find_start):
+- Scans maze to locate 'O'.
+3. Getting Neighbors (find_neighbors):
+- Returns valid up/down/left/right cells.
+4. BFS Search (find_path):
+- Uses queue for BFS.
+- Tracks visited nodes.
+- Animates search with time.sleep(0.1).
+- Stops when 'X' is found.
+5. main():
+- Initializes curses.
+- Runs BFS animation.
+- Waits for keypress.
+
+Run the Program:
+
+Summary:
+- Maze traversal
+- BFS shortest path
+- Terminal animation
+- Real-time path visualization
+This project demonstrates a blend of algorithmic logic and visual terminal output.
